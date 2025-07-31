@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #119ff1;
+  padding-top: 50px;
+}
+
+ul{
+ position: sticky;
+ top: 0;
+ text-align : right;
+}
+
+h1{
+  color: beige;
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li img {
+  box-shadow: 5px 5px 20px black;
+  transform: scale(1);
+  transition: transform 1.5s;
+}
+
+li img:hover {
+  transform: scale(1.5);
+}
