@@ -1,0 +1,3 @@
+function saluer() {
+  alert("Bonjour !");
+}
