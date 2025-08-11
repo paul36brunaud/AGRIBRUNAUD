@@ -13,3 +13,19 @@ h1{
   font-weight: 100;
   font-style: normal;
 }
+
+a {
+  background-color : #d2d9df;
+  border: none;
+  color: #5791dd;
+  border-radius : 60px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.7s;
+  color: rgb(0, 0, 0);
+  border: 4px solid #023f9b; 
+  margin-top: 30px
+}
