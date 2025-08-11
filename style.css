@@ -29,5 +29,8 @@ a {
   transition-duration: 0.7s;
   color: rgb(0, 0, 0);
   border: 4px solid #023f9b; 
-  margin-top: 30px
+  margin-top: 30px;
+  position : sticky;
+  top : 0;
+  text-align: right;
 }
