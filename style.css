@@ -13,9 +13,14 @@ body {
 }
 
 .cam {
-  position: fixed; /* ou fixed pour rester visible au scroll */
-  right: 50px;         /* distance du bord gauche */
-  top: 120px;          /* distance du haut */
+  position: fixed;  /* reste visible même au défilement */
+  right: 50px;      /* distance du bord droit */
+  top: 100px;       /* distance du haut */
+  transition: transform 0.5s; /* transition fluide */
+}
+
+.cam:hover {
+  transform: scale(1.5); /* agrandissement au survol */
 }
 
 .machaine {
@@ -38,8 +43,8 @@ body {
 
 .machaine:hover,
 .machaine:focus {
- background-color: #9b9b9b;
- color : #F0DCB1;
+ background-color: #b1b0b0;
+ color : #000000;
  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -70,7 +75,7 @@ h1 {
 
 .vidéocalcaire:hover,
 .vidéocalcaire:focus {
- background-color: #9b9b9b;
+ background-color: #b1b0b0;
  color : #F0DCB1;
  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
