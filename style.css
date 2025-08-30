@@ -29,6 +29,9 @@ justify-content: center;  /* aligne horizontalement */
   right: 30px;         /* distance du bord gauche */
   top: 50px;          /* distance du haut */
   height: auto;
+  padding: 1em 2em;     /* em = proportionnel au texte */
+  font-size: 1rem;      /* rem = adaptable à la taille du texte global */
+  width: 10%; 
 }
 
 .machaine:hover,
