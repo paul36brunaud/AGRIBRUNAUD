@@ -8,8 +8,8 @@ body {
   padding-top: 50px;
 }
 .titre{
- top: 0;
- text-align : center;
+display: flex;
+justify-content: center;  /* aligne horizontalement */
 }
 
 .machaine {
@@ -28,6 +28,7 @@ body {
   position: absolute; /* ou fixed pour rester visible au scroll */
   right: 30px;         /* distance du bord gauche */
   top: 50px;          /* distance du haut */
+  height: auto;
 }
 
 .machaine:hover,
