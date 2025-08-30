@@ -10,6 +10,10 @@ body {
 .titre{
 display: flex;
 justify-content: center;  /* aligne horizontalement */
+align-items: center;      /* aligne verticalement */
+width: 100%;       /* prend 80% de la largeur de l’écran */
+max-width: 6000px; /* limite sur les grands écrans */
+height: auto;     /* garde les proportions */
 }
 
 .machaine {
@@ -31,7 +35,9 @@ justify-content: center;  /* aligne horizontalement */
   height: auto;
   padding: 1em 2em;     /* em = proportionnel au texte */
   font-size: 1rem;      /* rem = adaptable à la taille du texte global */
-  width: 10%; 
+  width: 12%;       /* prend 80% de la largeur de l’écran */
+max-width: 6000px; /* limite sur les grands écrans */
+height: auto;     /* garde les proportions */
 }
 
 .machaine:hover,
@@ -42,9 +48,12 @@ justify-content: center;  /* aligne horizontalement */
 }
 .cam {
   position: fixed;  /* reste visible même au défilement */
-  right: 50px;      /* distance du bord droit */
+  right: 52px;      /* distance du bord droit */
   top: 150px;       /* distance du haut */
   transition: transform 0.5s; /* transition fluide */
+  width: 13%;       /* prend 80% de la largeur de l’écran */
+  max-width: 6000px; /* limite sur les grands écrans */
+  height: auto;     /* garde les proportions */
 }
 
 .cam:hover {
