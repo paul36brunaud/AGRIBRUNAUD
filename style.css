@@ -95,12 +95,12 @@ h1 {
   font-size: 15px;
   transition-duration: 0.7s;
   border: 6px solid #000000; 
-  position: fixed; /* ou fixed pour rester visible au scroll */
+  position: absolute; /* ou fixed pour rester visible au scroll */
   right: 150px;         /* distance du bord gauche */
   top: 150px;          /* distance du haut */
 }
 .cam {
-  position: fixed;  /* reste visible même au défilement */
+  position: absolute;  /* reste visible même au défilement */
   right: 50px;      /* distance du bord droit */
   top: 250px;       /* distance du haut */
   transition: transform 0.5s; /* transition fluide */
