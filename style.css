@@ -56,12 +56,7 @@ h1 {
 }
 
 .calcaire {
- border-image-source : url("https://www.youtube.com/embed/dcHlUO3BJPE?si=qPrcHqWvgHJAmB6_");
- border-image-slice:124;
- background-clip: padding-box;
- border-image-outset:31px;
- border-image-width:auto;
- border-image-repeat: round round;
+ overflow: hidden;               /* important pour que la vidéo suive l'arrondi */
  box-shadow : 5px 5px 20px black;
  border-radius : 20px;
  position: absolute;
@@ -70,28 +65,17 @@ h1 {
 }
 
 .covercrop {
- border-image-source : url("https://www.youtube.com/embed/dcHlUO3BJPE?si=qPrcHqWvgHJAmB6_");
- border-image-slice:124;
- background-clip: padding-box;
- border-image-outset:31px;
- border-image-width:auto;
- border-image-repeat: round round;
+ overflow: hidden;               /* important pour que la vidéo suive l'arrondi */
  box-shadow : 5px 5px 20px black;
  border-radius : 20px;
  position: absolute;
  top: 750px;
  left: 100px;
 }
-
 .ensillage {
- border-image-source : url("https://www.youtube.com/embed/dcHlUO3BJPE?si=qPrcHqWvgHJAmB6_");
- border-image-slice:124;
- background-clip: padding-box;
- border-image-outset:31px;
- border-image-width:auto;
- border-image-repeat: round round;
  box-shadow : 5px 5px 20px black;
  border-radius : 20px;
+ overflow: hidden;               /* important pour que la vidéo suive l'arrondi */
  position: absolute;
  top: 1150px;
  left: 100px;
