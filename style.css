@@ -27,7 +27,7 @@ body {
   border: 6px solid #000000; 
   position: absolute; /* ou fixed pour rester visible au scroll */
   right: 30px;         /* distance du bord gauche */
-  top: 50px;          /* distance du haut */
+  top: 250px;          /* distance du haut */
 }
 
 .machaine:hover,
@@ -39,7 +39,7 @@ body {
 .cam {
   position: fixed;  /* reste visible même au défilement */
   right: 50px;      /* distance du bord droit */
-  top: 150px;       /* distance du haut */
+  top: 350px;       /* distance du haut */
   transition: transform 0.5s; /* transition fluide */
 }
 
