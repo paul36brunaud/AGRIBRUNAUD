@@ -80,3 +80,23 @@ h1 {
  top: 1150px;
  left: 100px;
 }
+
+@media screen and (max-width: 600px) {
+ .machaine {
+ background-color : #ffffff;
+  font-family: "Comic Relief", system-ui;
+  border: none;
+  color: #000000;
+  border-radius : 60px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  transition-duration: 0.7s;
+  border: 6px solid #000000; 
+  position: fixed; /* ou fixed pour rester visible au scroll */
+  right: 30px;         /* distance du bord gauche */
+  top: 250px;          /* distance du haut */
+}
+}
