@@ -25,7 +25,7 @@ body {
   font-size: 15px;
   transition-duration: 0.7s;
   border: 6px solid #000000; 
-  position: absolute; /* ou fixed pour rester visible au scroll */
+  position: fixed; /* ou fixed pour rester visible au scroll */
   right: 30px;         /* distance du bord gauche */
   top: 250px;          /* distance du haut */
 }
