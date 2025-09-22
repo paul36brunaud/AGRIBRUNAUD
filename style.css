@@ -36,11 +36,13 @@ body {
  color : #000000;
  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 .cam {
   position: fixed;  /* reste visible même au défilement */
   right: 50px;      /* distance du bord droit */
-  top: 350px;       /* distance du haut */
+  bottom: 5px;
   transition: transform 0.5s; /* transition fluide */
+  top: 350px;       /* distance du haut */
 }
 
 .cam:hover {
@@ -72,6 +74,7 @@ h1 {
  top: 750px;
  left: 100px;
 }
+
 .ensillage {
  box-shadow : 5px 5px 20px black;
  border-radius : 20px;
@@ -96,11 +99,12 @@ h1 {
   transition-duration: 0.7s;
   border: 6px solid #000000; 
   position: absolute; /* ou fixed pour rester visible au scroll */
-  bottom: 10px;          /* distance du haut */
+  right: 250px;         /* distance du bord gauche */
+  bottom: 60px;
 }
 .cam {
   position: absolute;  /* reste visible même au défilement */
   transition: transform 0.5s; /* transition fluide */
-  bottom: 10px;          /* distance du haut */
+  bottom: 5px;
 }
 }
