@@ -4,15 +4,219 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AGRIBRUNAUD</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ---- IMPORT POLICE ---- */
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Comic Relief', cursive, sans-serif; /* police appliquée */
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+    /* ---- BARRE FIXE ---- */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #f9f9f9;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ombre légère pour cohérence */
+    }
+
+    nav img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 80px;
+    }
+
+    .youtube-link {
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* ombre légère pour cohérence */
+    }
+    .youtube-link:hover {
+      background: darkred;
+    }
+
+    /* ---- CONTENU ---- */
+    main {
+      flex: 1;
+      padding: 100px 20px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+      font-weight: 700;
+    }
+
+    .cam img {
+      max-width: 250px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* ---- GRILLE DE VIDÉOS ---- */
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow : 5px 5px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: #dbdbdb;
+      color: #333;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    }
+    footer a {
+      color: #0077cc;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- BOUTON RETOUR EN HAUT ---- */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #f9f9f9;
+      color: #333;
+      border: none;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      display: none;
+      z-index: 1001;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s, transform 0.2s;
+    }
+    #backToTop:hover {
+      background: #e0e0e0;
+      transform: scale(1.15);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 768px) {
+      nav {
+        height: 80px;
+        padding: 0 10px;
+      }
+      nav img {
+        height: 60px;
+      }
+      .youtube-link {
+        padding: 8px 15px;
+        font-size: 14px;
+      }
+
+      .videos {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class=titre><img src="images/3.png"width=600></div>
-  <div class=machaine><a href="https://www.youtube.com/@agribrunaud36" class="ma chaine youtube" >clic ici<br><b>MA CHAINE YOUTUBE</b></br></a></div>
-  <div class=cam><img src="images/4.png"width=200></div>
-  <h1>MES VIDEOS :</h1>
-   <div class=calcaire><iframe width="560" height="315" src="https://www.youtube.com/embed/GQqDN0iwYx8?si=WCSW9H3F9SLS8Hxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-   <div class=covercrop><iframe width="560" height="315" src="https://www.youtube.com/embed/_hePr4RvO8I?si=gqyU7lO1nIg14-nt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-   <div class=ensillage><iframe width="560" height="315" src="https://www.youtube.com/embed/rr0QrgThk_0?si=VfsS8HKc2Uia9PDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <!-- Menu fixe -->
+  <nav>
+    <img src="images/3.png" alt="Logo AGRIBRUNAUD">
+    <a href="https://www.youtube.com/@agribrunaud36" class="youtube-link" target="_blank">
+      🎥 Ma chaîne YouTube
+    </a>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <div class="cam">
+      <img src="images/4.png" alt="Caméra">
+    </div>
+
+    <h1>MES VIDÉOS :</h1>
+
+    <div class="videos">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/GQqDN0iwYx8" title="Vidéo YouTube 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/_hePr4RvO8I" title="Vidéo YouTube 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/rr0QrgThk_0" title="Vidéo YouTube 3" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    © 2025 AGRIBRUNAUD — Tous droits réservés  
+    | <a href="mailto:tonemail@example.com">AGRIBRUNAUD</a>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backToTop">↑</button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
