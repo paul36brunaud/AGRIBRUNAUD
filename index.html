@@ -143,23 +143,30 @@
     }
 
     /* ---- RESPONSIVE ---- */
-    @media (max-width: 768px) {
-      nav {
-        height: 80px;
-        padding: 0 10px;
-      }
-      nav img {
-        height: 60px;
-      }
-      .youtube-link {
-        padding: 8px 15px;
-        font-size: 14px;
-      }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;     /* logo en haut, lien en dessous */
+    height: auto;               /* hauteur auto */
+    padding: 10px;
+  }
 
-      .videos {
-        grid-template-columns: 1fr;
-      }
-    }
+  nav img {
+    position: static;           /* plus d’absolute */
+    transform: none;
+    margin-bottom: 10px;
+    height: 60px;
+  }
+
+  .youtube-link {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .videos {
+    grid-template-columns: 1fr; /* vidéos en une seule colonne */
+  }
+}
+
   </style>
 </head>
 <body>
@@ -197,7 +204,7 @@
   <!-- Pied de page -->
   <footer>
     © 2025 AGRIBRUNAUD — Tous droits réservés  
-    | <a href="mailto:tonemail@example.com">AGRIBRUNAUD</a>
+    | <a href="https://paul36brunaud.github.io/AGRIBRUNAUD/">AGRIBRUNAUD</a>
   </footer>
 
   <!-- Bouton retour en haut -->
