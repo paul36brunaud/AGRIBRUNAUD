@@ -136,7 +136,7 @@
     }
 
     /* ---- RESPONSIVE ---- */
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   nav {
     flex-direction: column;     /* logo en haut, lien en dessous */
     height: auto;               /* hauteur auto */
