@@ -32,6 +32,7 @@
       left: 50%;
       transform: translateX(-50%);
       height: 80px;
+      padding: 0 20px;   /* espace blanc à gauche et à droite */
     }
 
     .youtube-link {
