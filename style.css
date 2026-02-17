@@ -4,7 +4,7 @@
     body {
       margin: 0;
       font-family: 'Comic Relief', cursive, sans-serif; /* police appliquée */
-      background: #f9f9f9;
+      background: #af0606;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
